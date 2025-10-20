@@ -8,12 +8,13 @@ body{
 li, ul{
     /* removes bullets */
     list-style-type: none;
+    margin: 0;
 }
 
-:root {
-    --main-light-color: (#EDF2F4);
-    --main-medium-color: (#8D99AE);
-    --main-dark-color: (#2B2D42);
+:root{
+    --main-light-color: #FEFAE0;
+    --main-medium-color: #606C38;
+    --main-dark-color: #283618;
 }
 
 .flexContainer{
@@ -30,7 +31,8 @@ li, ul{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 4fr ;
+    
 }
 
 
@@ -45,18 +47,20 @@ li, ul{
     display: grid;
     grid-column: 1/2;
     grid-row: 1/3;
+    background-color: var(--main-dark-color);
+    color: var(--main-light-color);
 
 }
 
 .listLinks{
-    
+    padding-top: 10px;
     display: grid;
-    gap: 60px;
-    border: 1px solid green;
+    gap: 30px;
 }
 
+
+
 .logoArea{
-    display: flex;
     justify-content: start;
     align-items: center;
     gap: 10px;
@@ -66,12 +70,24 @@ li, ul{
     width: 30%;
 }
 
+.listLinks>li{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+.listLinks>li>img{
+    width: 15%;
+
+}
+
 /* HEADER AREA---------------------- */
 
 .header{
-    background-color: lightcoral;
+    background-color: var(--main-medium-color);
     display: grid;
     grid-template-rows: 1fr 1fr;
+    color: var(--main-light-color);
 }
 
 .greeting{
@@ -96,7 +112,7 @@ li, ul{
 /* CONTENT AREA---------------------- */
 
 .content{
-    background-color: lightcyan;
+    background-color: var(--main-light-color);
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
