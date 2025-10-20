@@ -24,7 +24,7 @@ li, ul{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr 4fr;
 }
 
 
@@ -33,7 +33,7 @@ li, ul{
     
 }
 
-/* SIDEBAR AREA */
+/* SIDEBAR AREA--------------------- */
 
 .sidebar{
     display: grid;
@@ -50,10 +50,28 @@ li, ul{
 }
 
 
-/* HEADER AREA */
+/* HEADER AREA---------------------- */
 
 .header{
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.greeting{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+    /* greeting buttons */
+.greeting>ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.greeting>ul>li{
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 20px;
 }
