@@ -1,7 +1,13 @@
-html{
+body{
     margin: 0;
     padding: 0;
     
+    
+}
+
+li, ul{
+    /* removes bullets */
+    list-style-type: none;
 }
 
 .flexContainer{
@@ -11,6 +17,7 @@ html{
     width: 100vw;
     box-sizing: border-box;
     border: 1px solid blue;
+    
 }
 
 .gridContainer{
@@ -23,7 +30,7 @@ html{
 
 .gridContainer>div{
     border: 1px solid red;
-    box-sizing: border-box;
+    
 }
 
 /* SIDEBAR AREA */
@@ -36,10 +43,17 @@ html{
 }
 
 .listLinks{
-    /* removes bullets */
-    list-style-type: none;
+    
     display: grid;
     gap: 60px;
     border: 1px solid green;
 }
 
+
+/* HEADER AREA */
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
