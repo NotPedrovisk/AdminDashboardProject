@@ -36,6 +36,7 @@ li, ul{
 /* SIDEBAR AREA--------------------- */
 
 .sidebar{
+    background-color: lightgreen;
     display: grid;
     grid-column: 1/2;
     grid-row: 1/3;
@@ -53,6 +54,7 @@ li, ul{
 /* HEADER AREA---------------------- */
 
 .header{
+    background-color: lightcoral;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -78,3 +80,18 @@ li, ul{
 
 /* CONTENT AREA---------------------- */
 
+.content{
+    background-color: lightcyan;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects{
+    
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    
+}
