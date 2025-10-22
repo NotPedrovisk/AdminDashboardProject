@@ -15,6 +15,7 @@ li, ul{
     --main-light-color: #FEFAE0;
     --main-medium-color: #606C38;
     --main-dark-color: #283618;
+    --card-border-radius:20px
 }
 
 .flexContainer{
@@ -106,7 +107,7 @@ li, ul{
 .greeting>ul>li{
     background-color: lightblue;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: var(--card-border-radius);
 }
 
 /* CONTENT AREA---------------------- */
@@ -131,6 +132,8 @@ li, ul{
 
 .projects>div{
     border: 1px solid lightseagreen;
+    background-color: wheat;
+    border-radius: var(--card-border-radius);
 }
 
 .news, .trending{
@@ -138,5 +141,17 @@ li, ul{
     display: grid;
     align-items: center;
     padding-left: 10%;
+    background-color: white;
+    border-radius: var(--card-border-radius)
+    
+}
+.news>div>h5, .trending>div>h5{
+    margin:0;
+    margin-top: 10px;
+}
+
+.news>div>p, .trending>div>p{
+    font-size: .9em;
+    
 }
 
