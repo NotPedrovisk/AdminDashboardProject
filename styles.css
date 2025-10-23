@@ -11,6 +11,19 @@ li, ul{
     margin: 0;
 }
 
+html{
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+@keyframes rainbowAnim{
+    0%{color: red;}
+    25%{color:blue;}
+    50%{color:green;}
+    75%{color:yellow;};
+
+}
+
 :root{
     --main-light-color: #FEFAE0;
     --main-medium-color: #606C38;
@@ -235,4 +248,14 @@ li, ul{
 }
 .trending>div>h5{
     text-align: center;
+}
+
+.trending>div>h5>a:link, .trending>div>h5>a:visited{
+    color: black;
+}
+
+.trending>div>h5>a:hover{
+    animation-name: rainbowAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
