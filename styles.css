@@ -78,7 +78,7 @@ li, ul{
 }
 
 .listLinks>li>img{
-    width: 15%;
+    max-width: 30px;
 
 }
 
@@ -94,6 +94,8 @@ li, ul{
 .greeting{
     display: grid;
     grid-template-columns: 1fr 1fr;
+   
+    
 }
 
     /* greeting buttons */
@@ -101,6 +103,8 @@ li, ul{
     display: flex;
     gap: 30px;
     align-items: center;
+    justify-self: right;
+    padding-right: 5%;
 }
 
 
@@ -108,6 +112,40 @@ li, ul{
     background-color: lightblue;
     padding: 10px;
     border-radius: var(--card-border-radius);
+
+}
+
+.greeting>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+
+}
+
+
+#userPfp{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit:cover;
+    
+}
+
+#searchBar{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+#searchBar>input[type="text"]{
+    width: max(30%,40%);
+    margin: 10px;
+}
+
+#searchBar>input[type="image"]{
+    max-width: 30px;
 }
 
 /* CONTENT AREA---------------------- */
@@ -129,6 +167,7 @@ li, ul{
     gap: 20px;
     padding: 40px;
     box-sizing: border-box;
+    
     
 }
 
@@ -167,6 +206,7 @@ li, ul{
     margin:0;
     margin-top: 10px;
     margin-bottom: 0;
+    text-decoration: underline;
 }
 
 .news>div>p, .trending>div>p{
